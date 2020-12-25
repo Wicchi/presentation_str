@@ -1,0 +1,77 @@
+---
+title: "How to solve structogram using the RStudio"
+author: "Shlapak Vladislav"
+date: "25.12.2020"
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Conent
+
+- What is structogram
+- How we may use it
+- How do we can use Rstudio to solve it
+
+## What is structogram
+
+## How we may use it
+
+## How do we can use Rstudio to solve it
+
+```{r, echo = TRUE}
+a <- 1
+while (a <= 10){
+  b = 20 - 2 * a
+  if (a > b){
+    print ('X')
+  } else {
+    print ('O')
+  }
+  a <- a + 1
+}
+```
+
+## How do we can use Rstudio to solve it
+```{r, echo = TRUE}
+a <- 10
+while (a > 1){
+  b <- 10
+  while (b > a) {
+    if (a %% 2 == 0){
+      print ("A")
+    }
+    else {print ("B")}
+    b <- b - 1
+  }
+  a <- a - 1
+}
+```
+
+## How do we can use Rstudio to solve it
+```{r, echo = TRUE}
+a <- 0
+b <- 5
+while (a < 4){
+  c = b - a
+  while (b > c){
+    if (a %% 2 == 0){
+      c = 0
+    }
+    else{
+      c = 1
+    }
+    while (c < a){
+      print (c)
+      c = c + 1
+    }
+    b = b - 1
+  }
+  a = a + 1
+}
+```
+
+
