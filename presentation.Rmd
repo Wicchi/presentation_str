@@ -12,47 +12,64 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Conent
 
-- What is structogram
-- How we may use it
-- How do we can use Rstudio to solve it
+1. What is structogram
+2. How we may use it
+3. How do we can use Rstudio to solve it
+4. Reverence
 
 ## What is structogram
 
+Structorgram is one of type way to represent algorithms. Usually, use sctructogram
+make more easy to understand what your algorithms do. 
+
 ## How we may use it
+
+For example we may use it to solve a lot of problems. 
 
 ## How do we can use Rstudio to solve it
 
 ```{r, echo = TRUE}
+newone_2 <- NULL
 a <- 1
 while (a <= 10){
   b = 20 - 2 * a
   if (a > b){
-    print ('X')
+    newone_2 = append(newone_2, "X")
+    #print ('X')
   } else {
-    print ('O')
+    newone_2 <- append(newone_2, "O")
+    #print ('O')
   }
   a <- a + 1
 }
+print (newone_2)
 ```
 
 ## How do we can use Rstudio to solve it
-```{r, echo = TRUE}
+```{r echo= TRUE}
+newone_4 <- NULL
 a <- 10
 while (a > 1){
   b <- 10
   while (b > a) {
     if (a %% 2 == 0){
-      print ("A")
+      newone_4 <- append(newone_4, "A")
+      #print ("A")
     }
-    else {print ("B")}
+    else {
+      newone_4 <- append(newone_4, "B")
+      #print ("B")
+      }
     b <- b - 1
   }
   a <- a - 1
 }
+print (newone_4)
 ```
 
 ## How do we can use Rstudio to solve it
 ```{r, echo = TRUE}
+newone_5 <- NULL
 a <- 0
 b <- 5
 while (a < 4){
@@ -65,13 +82,19 @@ while (a < 4){
       c = 1
     }
     while (c < a){
-      print (c)
+      newone_5 <- append(newone_5, c)
+      #print (c)
       c = c + 1
     }
     b = b - 1
   }
   a = a + 1
 }
+print (newone_5)
 ```
+
+## Reverence
+Of course you can find [my github repository](https://github.com/Wicchi/presentation_str) with all files.
+
 
 
